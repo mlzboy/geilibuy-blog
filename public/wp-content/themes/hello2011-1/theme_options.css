@@ -1,0 +1,82 @@
+.wrap {
+	margin-bottom: 50px;
+}
+
+	.wrap ul.theme_options_tab {
+		margin-top: 20px;
+		border-bottom: 1px solid #666;
+		padding-left: 50px;
+	}
+		.wrap ul.theme_options_tab li {
+			float: left;
+			margin: 0;
+			margin-right: 15px;
+			margin-bottom: -1px;
+			padding: 8px 10px;
+			border: 1px solid #666;
+			border-bottom: none;
+			color: #fff;
+			background: #2887B3;
+			-moz-border-radius:6px 6px 0 0;
+			-webkit-border-radius:6px 6px 0 0;
+			_display: inline;
+		}
+		.wrap ul.theme_options_tab li.current {
+			color: #333;
+			background: #F9F9F9;
+			font-weight: bold;
+		}
+		
+		.wrap .version_tips {
+			display: none;
+			margin: 20px 0;
+			padding: 5px;
+			border: 1px solid #E6DB55;
+			background: #FFFBCC;
+		}
+	.wrap .box {
+		margin: 20px 0 0 50px;
+		border: 1px solid #ccc;
+		-moz-border-radius:6px;
+		-webkit-border-radius:6px;
+	}
+		.wrap .box textarea {
+			min-width: 450px;
+			height: 200px;
+		}
+		.custom_con input {
+			width: 450px;
+			height: 30px;
+		}
+
+	.wrap h3.box_title {
+		margin: 0;
+		padding: 10px 0 10px 20px;
+		color: #666;
+		background: #F1F1F1;
+	}
+	.wrap .box_content {
+		margin: 40px 20px;
+	}
+	
+		
+	
+.wrap .fl_submit {
+	margin: 20px 0 0 50px;
+}
+	.wrap .fl_submit_btn,.wrap .fl_reset_btn,.wrap .fl_submit_btn:hover,.wrap .fl_reset_btn:hover {
+		color: #fff;
+		font-weight: bold;
+		background: #2887B3;
+	}
+	.wrap .fl_reset {
+		float: left;
+		margin-left: 130px;
+		margin-top: -29px;
+	}
+	
+
+.mt20 { margin-top: 30px; }
+.fleft { float: left; }
+.fright { float: right; }
+.clear { clear: both; }	

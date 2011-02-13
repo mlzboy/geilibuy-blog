@@ -1,0 +1,323 @@
+﻿@charset "utf-8";
+/*----------------------------------------------------------------------------------
+  | Theme Name: Hello 2011
+  | Theme URI: http://leotheme.cn/theme
+  | Description: Theme for WordPress 3.0. By Await 
+  | Version: 1.0
+  | Author: Await
+  | Author URI: http://leotheme.cn
+  | Tags: red,custom-sidebar,theme-options,comments,tipswindown,login-windown,2011
+  --------------------------------------------------------------------------------*/
+body {
+	margin: 0 auto;
+	padding: 0px;
+	font: 12px 'Microsoft Yahei','微软雅黑',arial,SimSun,sans-serif;
+	text-align: center;
+	color: #777;
+	background: #BC0001 url(images/bg_body.png) right top no-repeat;
+}
+
+/*Rest
+---------------------------------------------------*/
+h1,h2,h3,h4,h5,h6,div,p,ul,ol,dl,dd,dt,abbr,form,input { margin: 0; padding: 0; }
+
+img { border: none; display: block; }
+
+a { color: #2B4A78; text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
+h1 { font-size: 14px; font-weight: normal; }
+
+h2 { font-size: 12px; color: #EDA9A7; text-transform: uppercase; margin-bottom: 10px; padding: 0 0 3px 8px; }
+
+ul { list-style: none; }
+
+/* Header 
+----------------------------------------------------*/
+#header { position: relative; width: 860px; margin: 0 auto; }
+
+.logo{float:left; width: 190px; height: 70px; margin-top: 10px; font-size:30px; color:#fff; }
+
+.description{ position: absolute; left: 110px; top: 30px; width: 150px; font-size: 20px; color: #FFF390; margin: 20px 0 10px 0; }
+
+.menu{ margin-top: 20px; width: 100%; height: 40px; background: #900900; filter: alpha(opacity=50); opacity: 0.5; }
+#header ul.nav{position: absolute; left:0; top:79px; width: 858px; height: 40px; line-height: 40px; margin-top: 20px; text-align: center; background: url(images/bg_nav.png) 0 -20px repeat-x; border: 1px solid #ff2f2f; }
+
+#header ul.nav li { float: left; padding: 0 10px; }
+
+#header ul.nav li.current-cat{ background: url(images/bg_nav.png) 0 0 repeat-x; border-left: 1px solid #ff2f2f; border-right: 1px solid #ff2f2f; }
+
+#header ul.nav li a { color: #FFF390; font-weight: bold; }
+
+#header ul.nav li a:hover{ color: #fff; text-decoration: none; }
+
+	#search{ position: relative; float: right; width:250px;  right: 0px; top: -70px; background: #fff; }
+
+	#searchBtn,#rss{ position: absolute; width: 40px; height: 30px; text-indent: -9em; overflow: hidden; cursor: pointer; background: url(images/search_icon.png) no-repeat; }
+
+	#rss{top: 10px; right: 41px; _right: 43px; background: url(images/rss_icon.png) no-repeat; }
+	
+	#searchBtn{right: 0; top: 0;	}
+	
+	#searchBox{ position: absolute; right: 0; top: 30px; display: none; padding-top: 1px; }
+
+	#searchform{ padding: 15px; background: #970802; border: 1px solid #C13F39; }
+
+	#searchform label{ display: none; }
+
+	#s{ height: 20px; line-height: 20px; padding: 2px 0 0px 2px; color: #fff; border: 1px solid #EDA9A7; background: #BC0001; }
+
+	#searchsubmit{ width: 45px; height: 26px; line-height: 24px; color: #fff; background: #670000; border: 1px solid #EDA9A7; }
+
+/* Container
+-------------------------------------------------- */
+#container { width: 860px; margin: 0 auto; padding: 12px; }
+
+/* Content
+--------------------------------------------------- */
+#content { float: left; width: 620px; background: #fff; border: 5px solid #C13F39; }
+
+	.post {padding:20px 10px 0 10px; color: #666; text-align: left;border-bottom: 1px solid #D8D8D8; }
+
+		.post a{ text-decoration: underline; }
+
+		.post h2 a,.post h2{ font-size: 20px; font-weight: bold; color: #2B4A78; text-decoration: none; }
+
+		.post .date{ padding-left: 10px; }
+
+		.post .info{ height: 30px; line-height: 30px; margin-top: 10px; padding-bottom: 10px;  }
+
+		.entry { font-size: 14px; margin: 10px 0; padding: 0 10px; line-height: 24px; text-align: left; word-wrap: break-word; }
+
+			.entry a { text-decoration: underline; }
+
+			.entry a:hover { text-decoration: none; }
+
+			.entry .hl-surround { margin: 10px 0; }
+			.entry a.more-link{ }
+
+			.entry img{ border: 3px solid #F5F5F5; margin: 10px 0; }
+
+		#sidebar{ width: 230px; color:#EDA9A7; background: #900900; }
+		#sidebar a {color: #FFF390; }
+		#sidebar a:hover { color: #fff; }
+
+		
+		#sidebar li { position: relative; list-style: none; text-align: left; border-top:1px solid #530500;}
+
+	#sidebar h2{
+	height: 30px;
+	line-height: 30px;
+	text-align: left;
+	color: #fff;
+	margin: 0px;
+	border-top: 1px solid #C13F39;
+	border-bottom: 1px solid #a13732;
+	background: url(images/bg_nav.png) 0 -20px repeat-x;
+	overflow: hidden;
+}
+
+	#sidebar p{ padding: 0 10px; line-height: 20px; color: #fff; }
+
+			#sidebar li ul { border-top:1px solid #530500; margin: 0; padding:8px; }
+
+				#sidebar li ul li { border: none; margin: 0; padding: 5px 0 5px 5px; }
+
+				#sidebar li ul.children li,#sidebar li ul.children li ul li { padding-left: 18px; background: url(images/icon.png) -470px -248px no-repeat; }
+
+			
+			#sidebar li.archive .showallarchive { display: block; width: 38px; margin-left: 24px; color: #02335c; background: url(images/icon.png) -444px -306px no-repeat; }
+
+				#sidebar li.archive .archiveup { background: url(images/icon.png) -444px -326px no-repeat; }
+
+				#sidebarComment li { position: relative; }
+
+				#sidebarComment li img { padding: 2px; border: 1px solid #60B7DE; position: relative; left: 0; top: 0; }
+
+				#sidebarComment li div { position: absolute; left: 55px; top: 0px; width: 150px; margin-left: 8px; display: inline; line-height: 16px; color: #fff; }
+
+	/*prev next*/
+	.newsPrevions{margin: 0 10px; line-height:30px; text-align: left; }
+
+		.previous-entries,
+		.next-entries,
+		.previous-entries a,
+		.next-entries a { text-align: left; margin-top: 5px; }
+
+	/*ADS*/
+
+
+
+
+/* Comments
+---------------------------------------- */
+#commentBox {
+	padding: 10px;
+}
+#commentlist li { margin-top: 40px; padding: 0 10px 10px 10px; border: 1px solid #D8D8D8; list-style: none; text-align: left; color: #666; }
+	
+	.comment-author { }
+
+	.comment-author .avatar { float: left; margin-top: -28px; padding: 2px; border: 1px solid #D8D8D8; background: #ffffff; }
+
+	
+		.comment-author cite { float: left; font-size: 12px; font-style: normal; display: block; height: 20px; margin-left: 5px; }
+
+		.comment-author span.says { display: none; }
+
+		
+	.comment-meta { clear: left; display: block; font-size: 12px; padding-top: 10px; }
+
+	.comment-body p { margin: 10px 0; line-height: 20px; }
+
+	.comment-body .reply { font-size: 12px; }
+
+		
+	#commentlist li.odd { background: #F5F5F5; }
+
+	#commentlist li .byuser { }
+
+	#commentlist li ul li { margin-right: 10px; margin-left: 10px; }
+
+	#comment-pages { height: 20px; margin-top: 15px; text-align: left; color: #EDA9A7; }
+
+		#comment-pages a,#comment-pages span{ margin: 0 3px; }
+
+		#comment-pages .current{ font-size: 14px; font-weight: bold; color: #fff; }
+
+	#comments,#respond h3 { margin-bottom: 20px; font-size: 16px; text-align: left; color: #666; }
+	#respond h3 { margin-top: 20px; }
+	#comments a,#respond h3 a{ color: #666; }
+
+.commentmetadata { margin: 0; display: block; font-weight: normal; }
+
+	#commentform p { margin: 5px 0; text-align: left; color: #666; }
+
+	#commentform .inputbox { width: 100%; margin-top: 5px; }
+
+		#commentform .inputbox label { font-size: 12px; }
+
+		#commentform .name,#commentform .email,#commentform .inputurl { float: left; width: 20%; display: inline; }
+
+		#commentform .email,#commentform .name { margin-right: 10px; }
+
+		#commentform .email,#commentform .inputurl { width: 37%; }
+
+		#author,#email,#url {
+	width: 97%;
+	padding: 2px 0 2px 2px;
+	margin-top: 5px;
+	color: #666;
+	border: 1px solid #999;
+	background: url(images/bg_textarea.png) 0 -120px repeat-x;
+	height: 25px;
+	vertical-align: middle;
+}
+
+	#commentform .textareabox { width: 100%; position: relative; z-index: 802; }
+
+		#cancel-comment-reply-link { width: 8px; color: #666; background: url(images/close_icon.png) no-repeat; text-indent: 10em; position: absolute; right: 2px; top: -10px; z-index: 889; height: 8px; overflow: hidden; }
+
+	#commentform textarea {
+	width: 99%;
+	padding: 2px;
+	color: #666;
+	border: 1px solid #999;
+	height: 176px;
+	background: url(images/bg_textarea.png) repeat-x;
+}
+
+	#commentform #submit {
+	margin: 5px 0 5px auto;
+	width: 108px;
+	height: 32px;
+	border: none;
+	color: #FFCA49;
+	font-weight: bold;
+	background: url(images/submit_btn.png) no-repeat;;
+}
+
+	#commentform .exact,#commentform #submit:hover { color: #FFF;}
+
+	#commentform .comment-tips { font-size: 12px; }
+
+/* Footer
+------------------------------------------- */
+#footer { width: 100%; height: 350px; margin: 0 auto; line-height: 20px; color: #EDA9A7; background: url(images/bg_footer.png) center top no-repeat; }
+
+	#footer a { text-decoration: underline; color: #FFF390; }
+
+	#footer a:hover { text-decoration: none; }
+
+
+/* Page style
+---------------------------------------------- */
+body.page .entry h2 { margin-top: 10px; color: #666; font-size: 16px;}
+
+body.page .entry li { list-style: none; margin: 5px 0; }
+
+body.error404 .notfound {height:300px; text-align: center; }
+
+body.error404 .notfound a{ text-decoration: underline; }
+
+body.error404 .notfound h1{ font-size: 36px; color: #EDA9A7; }
+
+body.error404 .notfound p { width: 365px; margin: 0 auto; margin-top: 20px; color: #EDA9A7; text-align: left; line-height: 22px; }
+
+#loginformbox { display: none; }
+
+	#loginform { margin: 20px 0 0 50px; font-size: 14px; }
+
+	#loginform p { margin: 10px 0; text-align: left; }
+
+	#loginform .user,#loginform .password { font-weight: bold; }
+
+#loginform .input-user,#loginform .input-password { width: 240px; padding: 5px 0 0 2px; border: 1px solid #CCC; background: url(images/bg.png) 0 -230px repeat-x; height: 23px; }
+
+	#login-submit { width: 82px; margin-left: 104px; border: none; color: #666; border: 1px solid #5aabcf; background: url(images/bg.png) 0 -180px repeat-x; line-height: 24px; text-align: center; height: 31px; vertical-align: middle; +margin-left: 98px; }
+
+	#login-submit:hover,#login-submit .hover { color: #02335c; background: url(images/bg.png) 0 -100px repeat-x; }
+
+/* Plugis */
+#relatedPost {
+	margin: 0 10px;
+}
+.related_post_title { margin: 10px 0 10px 0; font-size: 20px; color: #333; height: 30px; line-height: 30px; text-align: left; }
+
+.related_post li { float: left; width: 350px; height: 20px; line-height: 20px; list-style: none; border-left: 3px solid #EDA9A7; margin: 3px 8px 3px 0; text-align: left; text-indent: 4px; overflow: hidden; }
+
+/* WordPress 2.1 Plugin: WP-PageNavi 2.20		*/
+.wp-pagenavi {
+	height: 30px; padding: 10px;
+}
+.wp-pagenavi a, .wp-pagenavi a:link, .wp-pagenavi a:active { padding: 2px 4px; margin-left: 4px; text-decoration: none; display: inline; float: left; _margin-top: 3px; border: 1px solid #D8D8D8; color: #2B4A78; background: #F5F5F5; }
+
+.wp-pagenavi a:hover { border: 1px solid #C13F39; color: #FFF; background: #960000; }
+
+.wp-pagenavi span.pages { padding: 2px 4px; display: inline; float: left; _margin-top: 3px; border: 1px solid #D8D8D8; color: #2B4A78; background: #F5F5F5; }
+
+.wp-pagenavi span.current { padding: 4px 6px; margin-left: 4px; margin-top: -3px; _margin-top: 0px; font-weight: bold; display: inline; float: left; border: 1px solid #C13F39; color: #FFF; background: #960000; }
+
+/*by Denglh 2011-01-07*/
+#XYTipsWindowBg { filter: alpha(opacity=50); opacity: 0.5; background: #000; }
+
+.XYTipsWindow .boxLoading,.boxError { position: absolute; display: block; width: 90px; height: 30px; line-height: 30px; margin-left: -45px; margin-top: -15px; left: 50%; top: 50%; color: #f00; }
+
+.XYTipsWindow .boxLoading{ width: 28px; margin-left: -14px; background: url(images/loading.gif) no-repeat; text-indent: -999em; text-align: center; }
+
+.XYTipsWindow .boxTitle { position: relative; border: 1px solid #A6C9E1; border-bottom: none; background: url(images/ico.png) 0 0 repeat-x; height: 30px; line-height: 30px; }
+
+.XYTipsWindow .boxTitle h3 { float: left; font-weight: normal; color: #666; font-size: 14px; margin: 0; text-indent: 10px; }
+
+.XYTipsWindow .boxTitle span { position: absolute; width: 10px; background: url(images/ico.png) -80px -40px no-repeat; text-indent: -10em; right: 10px; top: 10px; height: 16px; overflow: hidden; cursor: pointer; }
+
+.XYTipsWindow .boxTitle span.hover { background: url(images/ico.png) -90px -40px no-repeat; }
+
+.XYTipsWindow .shadow { box-shadow: 3px 3px 5px #bfbfbf; -moz-box-shadow: 3px 3px 5px #bfbfbf; -webkit-box-shadow: 3px 3px 5px #bfbfbf; }
+
+.fleft { float: left; }
+
+.fright { float: right; }
+
+.clear { clear: both; }
